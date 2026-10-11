@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Naziya Qureshi – Service Manager | Profile</title>
-<meta name="description" content="Naziya Qureshi – Service Manager. Seedha WhatsApp par sampark karein.">
+<title>Naziya Qureshi – Mentor & Service Manager | Profile</title>
+<meta name="description" content="Naziya Qureshi – Mentor & Service Manager. Seedha WhatsApp par sampark karein.">
+<meta property="og:title" content="Naziya Qureshi – Mentor & Service Manager">
+<meta property="og:image" content="https://i.ibb.co/qLNKVb1X/Whats-App-Image-2026-10-11-at-1-38-43-PM.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -47,7 +49,7 @@ nav.bar .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .hero .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
 .portrait{position:relative;max-width:420px;margin:0 auto;width:100%}
 .portrait::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--gold);border-radius:22px}
-.portrait img{position:relative;width:100%;border-radius:22px;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;background:var(--green2)}
+.portrait img{position:relative;width:100%;border-radius:22px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;background:var(--green2)}
 .ph-box{display:none;position:relative;aspect-ratio:4/5;border:2px dashed var(--gold);border-radius:22px;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--gold-l);font-size:.9rem}
 .tag{display:inline-block;border:1px solid var(--gold);color:var(--gold-l);border-radius:99px;padding:5px 16px;font-size:.82rem;margin-bottom:16px}
 .hero h1{color:#fff;font-size:clamp(2.8rem,7vw,4.6rem);margin-bottom:6px}
@@ -82,10 +84,8 @@ nav.bar .wrap{display:flex;align-items:center;justify-content:space-between;heig
 .vid.yt{aspect-ratio:16/9}
 .vid.file{aspect-ratio:9/16;max-height:520px}
 .vid iframe,.vid video{width:100%;height:100%;border:0;display:block;object-fit:cover}
-.empty{border:2px dashed var(--gold);border-radius:14px;padding:34px 16px;text-align:center;color:var(--gold-d);font-size:.9rem;background:rgba(217,165,58,.08)}
 .shots{columns:3 220px;column-gap:16px}
-.shots img{width:100%;margin-bottom:16px;border-radius:14px;border:1px solid var(--line);cursor:zoom-in;break-inside:avoid}
-.shots .empty{margin-bottom:16px;break-inside:avoid}
+.shots img{width:100%;margin-bottom:16px;border-radius:14px;border:1px solid var(--line);cursor:zoom-in;break-inside:avoid;background:#fff}
 h3.sec{font-size:1.9rem;text-align:center;margin:46px 0 18px}
 .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:34px}
 .review{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
@@ -132,15 +132,16 @@ footer a{color:#fff}
 <script>
 const CONFIG = {
   name: "Naziya Qureshi",
-  role: "Service Manager",
+  role: "Mentor & Service Manager",
   tagline: "Aapki seva mein, hamesha",
-  intro: "Main aapko behtareen service aur sahi guidance dene ke liye yahan hoon. Kisi bhi sawaal ya kaam ke liye seedha WhatsApp par baat karein.",
+  intro: "Main aapko behtareen guidance, training aur service dene ke liye yahan hoon. Kisi bhi sawaal ya kaam ke liye seedha WhatsApp par baat karein.",
 
-  whatsapp: "918530597120",              // WhatsApp / call number (91 ke saath)
+  whatsapp: "918530597120",
   displayPhone: "+91 85305 97120",
   whatsappMessage: (n, p) => `Namaste Naziya ji, mera naam ${n} hai aur mera number ${p} hai. Mujhe aapse baat karni hai.`,
 
-  photo: "images/naziya.jpg",                    // aapki photo: images/naziya.jpg
+  // Mentor ki photo (ImgBB direct link)
+  photo: "https://i.ibb.co/qLNKVb1X/Whats-App-Image-2026-10-11-at-1-38-43-PM.jpg",
 
   stats: [
     { n: "500+", t: "Happy clients" },
@@ -151,11 +152,11 @@ const CONFIG = {
 
   aboutTitle: "Mere baare mein",
   about: [
-    "Yahan apne baare mein likhein: aap kaun hain, kya kaam karti hain aur aapko kitne saal ka experience hai.",
-    "Apna maqsad likhein: jaise, har client ko sahi, bharosemand aur samay par service dena."
+    "Main Naziya Qureshi hoon, ek Mentor aur Service Manager. Mera kaam hai aapko sahi guidance, practical training aur bharosemand service dena.",
+    "Mera maqsad hai ki har student aur client ko saaf tareeke se samjhaya jaye aur uska kaam samay par poora ho."
   ],
   facts: [
-    { k: "Pad", v: "Service Manager" },
+    { k: "Pad", v: "Mentor & Service Manager" },
     { k: "Experience", v: "5+ saal" },
     { k: "Bhasha", v: "Hindi, Urdu, English" },
     { k: "Sampark", v: "WhatsApp / Call" }
@@ -166,30 +167,33 @@ const CONFIG = {
   services: [
     { icon: "🤝", title: "Guidance & Support", text: "Aapke sawaalon ka seedha aur sahi jawab." },
     { icon: "🗂️", title: "Planning & Management", text: "Kaam ko step-by-step plan karke time par poora karna." },
-    { icon: "🎓", title: "Training", text: "Aasaan bhasha mein practical training aur sikhaana." }
+    { icon: "🎓", title: "Mentoring & Training", text: "Aasaan bhasha mein practical training aur sikhaana." }
   ],
 
-  // Meri videos
+  // Meri videos (abhi khaali hai, to ye section apne aap chhup jayega)
   myVideosTitle: "Meri videos",
   myVideos: [
     // { type: "file", src: "videos/intro.mp4" },
     // { type: "youtube", src: "VIDEO_ID" },
   ],
 
-  // Student / client feedback
-  feedbackTitle: "Logon ka feedback",
+  // Students ka feedback (ImgBB direct links)
+  feedbackTitle: "Students ka feedback",
   feedbackImages: [
-    // "images/feedback1.jpg",
-    // "images/feedback2.jpg",
+    "https://i.ibb.co/hRsWgW4V/Whats-App-Image-2026-10-11-at-1-36-23-PM.jpg",
+    "https://i.ibb.co/SDs6rZSS/Whats-App-Image-2026-10-11-at-1-36-10-PM.jpg",
+    "https://i.ibb.co/d0bR20Q1/Whats-App-Image-2026-10-11-at-1-35-52-PM.jpg",
+    "https://i.ibb.co/5WBchZ7S/Whats-App-Image-2026-10-11-at-1-35-25-PM.jpg",
+    "https://i.ibb.co/WvgRkq5z/Whats-App-Image-2026-10-11-at-1-35-39-PM.jpg",
+    "https://i.ibb.co/6cqT3wsg/Whats-App-Image-2026-10-11-at-1-36-01-PM.jpg"
   ],
   feedbackVideos: [
     // { type: "file", src: "videos/student1.mp4" },
     // { type: "youtube", src: "VIDEO_ID" },
   ],
+  // Text reviews (abhi khaali, asli reviews yahan add kar sakte hain)
   reviews: [
-    { name: "Client ka naam", text: "Yahan feedback likhein. Bahut achhi aur bharosemand service mili." },
-    { name: "Client ka naam", text: "Naziya ji ne bahut achhe se samjhaya aur madad ki." },
-    { name: "Client ka naam", text: "Samay par kaam aur behtareen vyavhaar." }
+    // { name: "Student ka naam", text: "Feedback yahan likhein." },
   ],
 
   contactTitle: "Mujhse sampark karein",
@@ -212,7 +216,7 @@ const CONFIG = {
   <div class="wrap">
     <div class="portrait">
       <img id="photo" alt="Naziya Qureshi">
-      <div class="ph-box" id="photoPh">Apni photo yahan lagayein<br><b>images/naziya.jpg</b></div>
+      <div class="ph-box" id="photoPh">Photo load nahi hui<br><b>CONFIG → photo</b></div>
     </div>
     <div>
       <span class="tag" id="tagline"></span>
@@ -245,7 +249,7 @@ const CONFIG = {
   </div>
 </section>
 
-<section>
+<section id="myVidSec">
   <div class="wrap">
     <h2 class="center" id="myVidTitle"></h2><div class="rule"></div>
     <p class="sub center">Mere kaam aur andaaz ki jhalak.</p>
@@ -256,9 +260,9 @@ const CONFIG = {
 <section id="feedback" style="background:var(--sand) var(--pat-light)">
   <div class="wrap">
     <h2 class="center" id="fbTitle"></h2><div class="rule"></div>
-    <p class="sub center">Asli logon ke asli messages aur videos.</p>
+    <p class="sub center">Asli students ke asli messages. Kisi bhi image par click karke bada dekhein.</p>
     <div class="shots" id="shots"></div>
-    <h3 class="sec">Video feedback</h3>
+    <h3 class="sec" id="fbVidHead">Video feedback</h3>
     <div class="vids" id="fbVids"></div>
     <div class="reviews" id="reviews"></div>
   </div>
@@ -316,13 +320,14 @@ $("ctTitle").textContent = C.contactTitle; $("ctSub").textContent = C.contactSub
 const vids = l => l.map(v => v.type === "youtube"
   ? `<div class="vid yt"><iframe src="https://www.youtube.com/embed/${v.src}" title="Video" loading="lazy" allowfullscreen></iframe></div>`
   : `<div class="vid file"><video src="${v.src}" controls preload="metadata" playsinline></video></div>`).join("");
-const empty = t => `<div class="empty">${t}</div>`;
-$("myVids").innerHTML = C.myVideos.length ? vids(C.myVideos) : empty("Apni video yahan lagayein<br><small>CONFIG → myVideos</small>").repeat(2);
-$("fbVids").innerHTML = C.feedbackVideos.length ? vids(C.feedbackVideos) : empty("Feedback video yahan lagayein<br><small>CONFIG → feedbackVideos</small>").repeat(2);
-$("shots").innerHTML = C.feedbackImages.length
-  ? C.feedbackImages.map(s => `<img src="${s}" alt="Feedback" loading="lazy">`).join("")
-  : empty("Feedback ka screenshot yahan lagayein<br><small>CONFIG → feedbackImages</small>").repeat(3);
+
+// Khaali sections apne aap chhup jaate hain
+if (C.myVideos.length) $("myVids").innerHTML = vids(C.myVideos); else $("myVidSec").style.display = "none";
+if (C.feedbackVideos.length) $("fbVids").innerHTML = vids(C.feedbackVideos); else { $("fbVids").style.display = "none"; $("fbVidHead").style.display = "none"; }
+$("shots").innerHTML = C.feedbackImages.map(s => `<img src="${s}" alt="Student feedback" loading="lazy">`).join("");
 $("reviews").innerHTML = C.reviews.map(r => `<div class="review"><div class="stars">★★★★★</div><p>“${r.text}”</p><b>${r.name}</b></div>`).join("");
+if (!C.reviews.length) $("reviews").style.display = "none";
+
 const lb = $("lb");
 $("shots").addEventListener("click", e => { if (e.target.tagName === "IMG"){ lb.querySelector("img").src = e.target.src; lb.style.display = "flex"; }});
 lb.addEventListener("click", () => lb.style.display = "none");
